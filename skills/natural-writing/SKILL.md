@@ -22,6 +22,7 @@ Review previously written copy in the conversation for LLM-isms. Find and fix:
 - Banned words and phrases
 - Structural patterns (tricolons, excessive parallelism)
 - Tone issues (sycophancy, hedging, corporate speak)
+- **Em dash overuse** (more than one per paragraph)
 
 Output a diff or rewrite with explanations.
 
@@ -82,6 +83,12 @@ tapestry, landscape, realm, paradigm, ecosystem, synergy, testament, cornerstone
 **The Em Dash Overload:**
 - BAD: "StackOne — the leading integration platform — helps you connect — seamlessly — to any HR system"
 - GOOD: Use commas, periods, or parentheses. One em dash per paragraph max.
+
+**Em Dash Detection Rules:**
+- Count em dashes (—) per paragraph. Flag if > 1.
+- Exception: Definition lists using "term — definition" format are acceptable.
+- Replace with: commas, colons, periods, or parentheses.
+- Em dashes with spaces on both sides ( — ) are especially AI-like.
 
 ### Structural Anti-Patterns
 
