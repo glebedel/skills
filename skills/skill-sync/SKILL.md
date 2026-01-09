@@ -1,3 +1,8 @@
+---
+name: skill-sync
+description: Automatically sync global Claude Code skills to the GitHub repository. Auto-triggers when creating or updating skills in ~/.claude/skills/.
+---
+
 # Skill Sync
 
 Automatically sync global Claude Code skills to the GitHub repository.
