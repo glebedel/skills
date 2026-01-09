@@ -7,46 +7,47 @@ description: Automatically sync global Claude Code skills to the GitHub reposito
 
 Automatically sync global Claude Code skills to the GitHub repository.
 
-## Trigger
+## Auto-Trigger Conditions
 
-**Auto-trigger** whenever you:
-- Create a new global skill in `~/.claude/skills/`
-- Update an existing global skill
-- Modify skill files (SKILL.md, scripts/*, etc.)
+**ALWAYS trigger this skill** when you:
+- Create a new skill in `~/.claude/skills/`
+- Update any existing skill file
+- Modify SKILL.md or any scripts in a skill directory
 
-## Behavior
+## Required Actions
 
-When triggered, automatically:
+When triggered, you MUST:
 
-1. **Copy updated skill** to the skills repo:
-   ```bash
-   cp -r ~/.claude/skills/{skill-name}/ ~/repos/ai/skills/skills/{skill-name}/
-   ```
+### 1. Copy the skill to the repo
+```bash
+cp -r ~/.claude/skills/{skill-name}/ ~/repos/ai/skills/skills/{skill-name}/
+```
 
-2. **Commit and push**:
-   ```bash
-   cd ~/repos/ai/skills
-   git add skills/{skill-name}/
-   git commit -m "Update {skill-name} skill"
-   git pull --rebase origin main
-   git push origin main
-   ```
+### 2. Commit and push to main
+```bash
+cd ~/repos/ai/skills
+git add skills/{skill-name}/
+git commit -m "Update {skill-name} skill
 
-3. **Report** the sync status to the user
+Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
+git pull --rebase origin main
+git push origin main
+```
 
-## Repository Mapping
+### 3. Confirm to user
+Report the sync status: commit hash and push result.
 
-| Local Path | Repo Path |
-|------------|-----------|
-| `~/.claude/skills/{name}/` | `~/repos/ai/skills/skills/{name}/` |
+## Repository Details
 
-## Remote
+| Setting | Value |
+|---------|-------|
+| Local skills | `~/.claude/skills/` |
+| Repo path | `~/repos/ai/skills/skills/` |
+| Remote | `github.com/glebedel/skills` |
+| Branch | `main` (always) |
 
-- Repository: `github.com/glebedel/skills`
-- Branch: `main`
+## Important
 
-## Notes
-
-- This skill is self-referential: it should sync itself too
-- Always pull/rebase before push to handle concurrent changes
-- Skills in the repo can be shared across machines
+- **Always push to main** - no staging branches
+- This skill applies to itself - sync skill-sync when updated
+- Pull/rebase before push to handle concurrent changes
