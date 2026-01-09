@@ -36,7 +36,7 @@ Output a diff or rewrite with explanations.
 delve, embark, harness, unleash, unlock, navigate, leverage, foster, cultivate, underscore, showcase, highlight, accentuate, illuminate, elucidate, unpack, unravel, spearhead, pioneer, trailblaze, revolutionize, transform, empower, supercharge, turbocharge, skyrocket
 
 **Adjectives & Descriptors:**
-pivotal, crucial, paramount, vital, robust, seamless, holistic, comprehensive, cutting-edge, groundbreaking, game-changing, innovative, transformative, unparalleled, meticulous, intricate, nuanced, multifaceted, vibrant, dynamic, synergistic, scalable, streamlined
+pivotal, crucial, paramount, vital, robust, seamless, holistic, comprehensive, cutting-edge, groundbreaking, game-changing, innovative, transformative, unparalleled, meticulous, intricate, nuanced, multifaceted, vibrant, dynamic, synergistic, scalable, streamlined, production-ready, battle-tested, enterprise-grade, world-class, best-in-class, state-of-the-art
 
 **Nouns:**
 tapestry, landscape, realm, paradigm, ecosystem, synergy, testament, cornerstone, catalyst, linchpin, bedrock, nexus, crucible, odyssey, journey (when metaphorical)
@@ -44,6 +44,7 @@ tapestry, landscape, realm, paradigm, ecosystem, synergy, testament, cornerstone
 **Filler Phrases:**
 - "It's important to note that..."
 - "It's worth mentioning..."
+- "Please note that..."
 - "In today's fast-paced world..."
 - "In the ever-evolving landscape of..."
 - "At its core..."
@@ -57,6 +58,13 @@ tapestry, landscape, realm, paradigm, ecosystem, synergy, testament, cornerstone
 - "In summary..." / "In conclusion..."
 - "Remember that..."
 - "As we all know..."
+- "Under the hood..." (say what it actually does)
+- "Out of the box..." (use "pre-built" or "without configuration")
+- "With just a few clicks..." (be specific about actual steps)
+- "Extremely powerful..." (show what it does instead)
+- "Designed to..." (just say what it does)
+- "Enables you to..." (say what it does directly)
+- "Allows you to seamlessly..." (double offender)
 
 ### Banned Patterns
 
@@ -141,6 +149,15 @@ Skip the "In this article, we'll explore..." intro. Start with the actual conten
 | scalable | grows with you |
 | streamline | simplify |
 | optimize | improve |
+| under the hood | (explain what it does) |
+| out of the box | pre-built, included, without setup |
+| production-ready | tested, stable |
+| battle-tested | proven, reliable |
+| enterprise-grade | (usually delete entirely) |
+| with just a few clicks | (describe actual steps) |
+| extremely powerful | (show specific capability) |
+| seamlessly integrates | connects to, works with |
+| empower | let, help, enable |
 
 ---
 
